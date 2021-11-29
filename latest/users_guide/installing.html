@@ -62,9 +62,9 @@ advanced topics section of this manual.</p>
 (gcc&gt;=4.9,Micrsoft Developer Studio &gt;= 2015)</p></li>
 <li><p>the <a class="reference external" href="http://www.boost.org/">Boost</a> libraries or a compiler with std::filesystem or std::experimental::filesystem</p></li>
 <li><p>the <a class="reference external" href="https://support.hdfgroup.org/HDF5/">HDF5</a> C library</p></li>
-<li><p><a class="reference external" href="https://github.com/google/googletest">googletest</a> to build the unit tests</p></li>
-<li><p><a class="reference external" href="http://www.sphinx-doc.org/en/stable/">sphinx</a> (with python) and  <a class="reference external" href="http://www.stack.nl/~dimitri/doxygen/index.html">doxygen</a> for the documentation build</p></li>
-<li><p><a class="reference external" href="https://cmake.org/">cmake</a> &gt;= 3.0</p></li>
+<li><p><a class="reference external" href="https://github.com/catchorg/catch2">catch2</a> to build the unit tests</p></li>
+<li><p><a class="reference external" href="http://www.sphinx-doc.org/en/stable/">sphinx</a> , <a class="reference external" href="https://github.com/michaeljones/breathe">breathe</a> (with python) and  <a class="reference external" href="https://www.doxygen.nl/index.html">doxygen</a> for the documentation build</p></li>
+<li><p><a class="reference external" href="https://cmake.org/">cmake</a> &gt;= 3.10</p></li>
 </ul>
 </section>
 <section id="getting-the-code">
@@ -97,7 +97,7 @@ $ <span class="nb">cd</span> h5cpp-build
 <p>which should do the job provided that all dependencies are installed in
 standard locations. We strongly recommend to set the particular build
 configuration with the <span class="target" id="index-0"></span><code class="xref std std-envvar docutils literal notranslate"><span class="pre">CMAKE_BUILD_TYPE</span></code> variable.</p>
-<p>To attempt to build without Boost, additionally specify <cite>-DWITH_BOOST=OFF</cite>.
+<p>To attempt to build without Boost, additionally specify <cite>-DH5CPP_WITH_BOOST=OFF</cite>.
 This requires a recent compiler, for example gcc &gt;8, with filesystem in
 the std or std::experimental namespace.</p>
 <p>On a Linux system the default build system used is
@@ -226,10 +226,10 @@ start with working right after the installation has finished.</p>
         <li class="nav-item nav-item-this"><a href="">Installing the library</a></li> 
       </ul>
     </div>
-<li>generated on 2021-11-26 15:15:23 from  (e1382f8)</li>
+<li>generated on 2022-02-10 09:46:34 from  (b91e184)</li>
 
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2017, Deutsches Elektronen-Synchrotron, European Spallation Source ERIC; generated on 2021-11-26 15:15:23 from  (e1382f8).
+        &#169; Copyright 2017, Deutsches Elektronen-Synchrotron, European Spallation Source ERIC; generated on 2022-02-10 09:46:34 from  (b91e184).
       Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.0.3.
     </div>
 
