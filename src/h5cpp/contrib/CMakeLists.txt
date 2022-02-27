@@ -9,5 +9,9 @@ if(H5CPP_ENABLE_NEXUS)
     add_subdirectory(nexus)
 endif()
 
+if(H5CPP_ENABLE_ARMA)
+    add_subdirectory(arma)
+endif()
+
 set(h5cpp_sources ${h5cpp_sources} ${CONTRIB_SOURCES} PARENT_SCOPE)
 set(h5cpp_headers ${h5cpp_headers} ${CONTRIB_HEADERS} PARENT_SCOPE)

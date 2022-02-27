@@ -61,6 +61,7 @@ endif()
 #=============================================================================
 set(H5CPP_ENABLE_NEXUS "true" CACHE BOOL "enable support or Nexus types")
 set(H5CPP_ENABLE_STL "true" CACHE BOOL "enable STL support for H5CPP")
+set(H5CPP_ENABLE_ARMA "true" CACHE BOOL "enable Armadillo support")
 
 #=============================================================================
 # General configuration
