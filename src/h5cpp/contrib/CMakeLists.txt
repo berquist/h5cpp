@@ -1,16 +1,16 @@
 set(CONTRIB_SOURCES)
 set(CONTRIB_HEADERS)
 
+if(H5CPP_ENABLE_ARMA)
+    add_subdirectory(arma)
+endif()
+
 if(H5CPP_ENABLE_STL)
     add_subdirectory(stl)
 endif()
 
 if(H5CPP_ENABLE_NEXUS)
     add_subdirectory(nexus)
-endif()
-
-if(H5CPP_ENABLE_ARMA)
-    add_subdirectory(arma)
 endif()
 
 set(h5cpp_sources ${h5cpp_sources} ${CONTRIB_SOURCES} PARENT_SCOPE)
