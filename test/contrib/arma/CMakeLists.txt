@@ -7,5 +7,6 @@ target_link_libraries(
         armadillo
         h5cpp
         hdf5::hdf5
+	Catch2::Catch2 Catch2::Catch2WithMain
 )
 catch_discover_tests(arma_test WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR})
